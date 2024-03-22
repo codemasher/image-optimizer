@@ -1,5 +1,5 @@
 {
-    "name": "ps/image-optimizer",
+    "name": "codemasher/image-optimizer",
     "type": "library",
     "description": "Image optimization / compression library. This library is able to optimize png, jpg and gif files in very easy and handy way. It uses optipng, pngquant, pngcrush, pngout, gifsicle, jpegoptim and jpegtran tools.",
     "keywords": ["image optimizer", "compression", "image", "optimization", "jpegoptim", "optipng"],
@@ -17,13 +17,14 @@
         }
     },
     "require": {
-        "php": "^7.3 | ^8.0",
-        "symfony/process": "~3.3 | ~4.0 | ~5.0",
-        "symfony/options-resolver": "~3.3 | ~4.0 | ~5.0",
-        "psr/log": "^1.0"
+        "php": "^7.4 || ^8.0",
+        "symfony/process": "^5.0 || ^6.0 || ^7.0",
+        "symfony/options-resolver": "^5.0 || ^6.0 || ^7.0",
+        "psr/log": "^1.1 || ^2.0 || ^3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "ext-gd": "*"
+        "phpunit/phpunit": "^9.6",
+        "ext-gd": "*",
+        "ext-imagick": "*"
     }
 }
